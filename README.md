@@ -45,7 +45,10 @@ hier de naam van de pagina
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+
+Experimenten: 
+Ik probeerde een search bar en hamburger menu in te zetten
+https://codepen.io/erikterwan/pen/EVzeRP
 </details>
 
 
