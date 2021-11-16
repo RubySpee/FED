@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Ruby Spee
 
 #### Je startniveau:
-Blauw/rood
+Blauw
 
 #### Je focus:
 Weet nog niet (kies uit responsive óf surface plane)
