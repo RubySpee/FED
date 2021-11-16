@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Met flexbox heb ik de nav in een rijtje gekregen van links naar rechts*/
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 11pt;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.home main h1 {
+  font-size: 15pt ;
+  font-family: sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin: 3pt;
+}
+
+.home main figure img {
+  width: 100%;
+  margin-top: 1em;
+}
+
+/*Door 'display: block' en de margin op auto komt het logo in het midden*/
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  width: 150px;
+  height: 57px;
+}
