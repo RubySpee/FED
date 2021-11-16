@@ -46,9 +46,6 @@ hier de naam van de pagina
 hier de naam van de pagina  
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
-Experimenten: 
-Ik probeerde een search bar en hamburger menu in te zetten
-https://codepen.io/erikterwan/pen/EVzeRP
 </details>
 
 
@@ -80,7 +77,9 @@ https://codepen.io/erikterwan/pen/EVzeRP
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+### Experimenten: 
+Ik probeerde een search bar en hamburger menu in te zetten
+https://codepen.io/erikterwan/pen/EVzeRP
 
 ### Agenda voor meeting
 samen met je groepje opstellen
