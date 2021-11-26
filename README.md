@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Ruby Spee
+Sanne 't Hooft (vervangen door jouw naam)
 
 #### Je startniveau:
-Blauw
+hier je startniveau (kies uit zwart, rood óf blauw)
 
 #### Je focus:
-Weet nog niet (kies uit responsive óf surface plane)
+hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -36,7 +36,7 @@ Weet nog niet (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-Ik ga de website van de Quest namaken. https://www.quest.nl/
+link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
@@ -45,7 +45,7 @@ hier de naam van de pagina
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
-
+ 
 </details>
 
 
@@ -77,9 +77,7 @@ hier de naam van de pagina
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-### Experimenten: 
-Ik probeerde een search bar en hamburger menu in te zetten
-https://codepen.io/erikterwan/pen/EVzeRP
+
 
 ### Agenda voor meeting
 samen met je groepje opstellen
