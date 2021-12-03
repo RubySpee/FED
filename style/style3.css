@@ -14,20 +14,16 @@ body {
   flex-direction: column;
 }
 
-/*Met flexbox heb ik de nav in een rijtje gekregen van links naar rechts*/
-header ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  background-color: red;
-  list-style-type: none;
-  font-size: 1em;
+h1 {
   font-family: sans-serif;
-  font-weight: bold;
+}
 
-  margin-top: 0.4em;
-  padding: 1em;
+h2 {
+  font-family: sans-serif;
+}
+
+p {
+  font-family: sans-serif;
 }
 
 li {
@@ -58,6 +54,21 @@ footer ul {
   width: 100%;
 }
 
+/*Met flexbox heb ik de nav in een rijtje gekregen van links naar rechts*/
+header ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background-color: red;
+  list-style-type: none;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  margin-top: 0.4em;
+  padding: 1em;
+}
 
 /*Door 'display: block' en de margin op auto komt het logo in het midden*/
 .logo {
@@ -225,11 +236,54 @@ footer ul {
   width: 100%;
 }
 
+
+
 /******************/
 /*Artikel over kat*/
 
+.kat p {
+  font-family: sans-serif;
+}
+
+.kat article {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.kat article:nth-of-type(1) h1 {
+  font-size: 1.5em;
+}
+
+.kat article:nth-of-type(1) img {
+  width: 100%;
+  margin-top: 1em;
+}
 
 
 
 /**********************/
 /*Artikel over Ameland*/
+
+.ameland p {
+  font-family: sans-serif;
+}
+
+.ameland article {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.ameland article:nth-of-type(1) h1 {
+  font-size: 1.5em;
+}
+
+.ameland article:nth-of-type(1) img {
+  width: 100%;
+  margin-top: 1em;
+}
