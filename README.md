@@ -76,27 +76,10 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Eigenlijk gaat het meeste wel goed. Het meeste wat ik niet snap of niet lukt kan ik op internet opzoeken en dan krijg ik een oplossing. Heb ook wat dingen gevraagt in het Teams kanaal van FED. Ik vind het ook een leuke opdracht, dus ik werk er graag aan. Ook vind ik het leuk om te experimenteren en kijken hoe ik het beste de content kan neerzetten. 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+Ik moest vooral nog even kijken naar de stuctuur van mijn html. Ik moet alle sections en articles omdraaien, om het wat nettere html te maken. Bij mijn css moest ik de px weghalen en daarvoor in plaats em neerzetten. Verder was alles prima en moet ik gewoon verder werken aan mijn website. 
 </details>
 
 
@@ -109,7 +92,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het gaat wel goed. Vind het leuk, dus zit graag te werken aan mijn website. De standaard dingen, zoals de content er goed in zetten en styling, gaat allemaal goed. Ga aankomende week aan de surface plane beginnen, dus dan gaat het wat ingewikkelder worden denk ik. Maar meeste dingen zijn op internet te vinden gelukkig. 
 
 
 ### Agenda voor meeting
