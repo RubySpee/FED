@@ -1,12 +1,13 @@
+/*Om de styling te reseten. Hierdoor geen standaard margins en paddings*/
 * {
   margin: 0;
   padding: 0;
 }
 
-a {
-  color: white; 
-  text-decoration: none;
-}
+
+
+/******************/
+/*Algemene styling*/
 
 body {
   display: flex;
@@ -14,124 +15,221 @@ body {
 }
 
 /*Met flexbox heb ik de nav in een rijtje gekregen van links naar rechts*/
-ul{
+header ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  background-color: red;
   list-style-type: none;
-  font-size: 11pt;
+  font-size: 1em;
   font-family: sans-serif;
   font-weight: bold;
-  margin-top: 2mm;
+
+  margin-top: 0.4em;
   padding: 1em;
-  background-color: red;
 }
+
+li {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #333333;
+
+  margin-top: 1.6em;
+}
+
+footer li {
+  font-size: 0.68em;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  margin-bottom: 1em;
+}
+
+footer ul {
+  list-style-type: none;
+  
+  padding: 1em;
+  width: 100%;
+}
+
 
 /*Door 'display: block' en de margin op auto komt het logo in het midden*/
 .logo {
   display: block;
+
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
-  width: 150px;
-  height: 57px;
+  width: 8.38em;
+  height: 3.2em;
 }
 
-/*article 1*/
 
-.home article:nth-of-type(1) h1 {
-  font-size: 1em ;
+
+/************/
+/*Homepagina*/
+
+/*section 1*/
+
+.home section:nth-of-type(1) article h1 {
+  font-size: 0.9em ;
   font-family: sans-serif;
   font-weight: 900;
+
   text-align: center;
-  margin-top: 8px;
-  margin-bottom: 20px;
+  margin-top: 1.3em;
+  margin-bottom: 0.6em;
 }
 
-.home article:nth-of-type(1) h1:hover {
-  color: red;
-  transition: .2s;
-}
-
-.home main article img {
+.home section:nth-of-type(1) article img {
   width: 100%;
-  margin-top: 3px;
+  margin-bottom: 1.5em;
 }
 
-/*article 2*/
 
-/*Door flexbox te gebruiken op de 2e article van .home krijg je 2 rijen met 2 sections*/
-.home article:nth-of-type(2) {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+/*section 2*/
+
+.home section:nth-of-type(2) {
+  display: grid; 
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.25em;
+
+  margin: 0.5em;
 }
 
-/*Dit zorgt ervoor dat de sections 50% van de breedte opnemen en daardoor worden het 2 rijen, want er zijn 4 sections*/
-.home article:nth-of-type(2) section {
-  flex-basis: 50%;
+.home section:nth-of-type(2) article{
+  grid-column:span 2;
 }
 
-/*Styling van de img*/
-.home article:nth-of-type(2) section img{
-  width: 90%;
-  margin: 10px;
+.home section:nth-of-type(2) article img{
+  width: 100%; 
+  margin-top: 0.5em;
 }
 
 /*Styling van de h2*/
-.home article:nth-of-type(2) section h2{
-  font-size: 10pt;
+.home section:nth-of-type(2) article h2{
+  font-size: 0.8em;
   font-family: sans-serif;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
-/*article 3*/
+
+
+/*section 3*/
 
 /*De h1 met mens erin*/
-.home article:nth-of-type(3) section h1 {
+.home section:nth-of-type(3) h1 {
   font-family: sans-serif;
   font-weight: 900;
   color: white;
   background-color: red;
-  padding: 10px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+
+  padding: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /*Hierdoor komt de h1 in het midden*/
-.home article:nth-of-type(3) section:nth-of-type(1) {
+.home section:nth-of-type(3) article {
   display: flex;
   justify-content: center;
 }
 
-/*Hierdoor komen de sections in een column te staan*/
-.home article:nth-of-type(3) {
-  display: flex;
-  flex-direction: column;
+
+
+/*section 4*/
+
+/*Hierdoor komen de articles in een column te staan*/
+.home section:nth-of-type(4) {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
 }
 
-/*Hierdoor komt de inhoud an de sections in een rij te staan*/
-.home article:nth-of-type(3) section {
-  display: flex;
-  flex-direction: row;
+/*Hierdoor komt de inhoud an de articles in een rij te staan*/
+.home section:nth-of-type(4) article {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); 
+
+  margin: 0.5em
 }
 
 /*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de h3*/
-.home article:nth-of-type(3) section h3 {
+.home section:nth-of-type(4) article h3 {
   font-family: sans-serif;
-  font-size: .875rem;
-  margin: 10px;
-  padding: 0.5rem 0.625rem 0.5rem 0;
+  font-size: 0.85em;
+
+  margin-left: 0.6em;
   order: 1;
 }
 
-.home article:nth-of-type(3) img {
-  width: 50%;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  margin-right: 5px;
+.home section:nth-of-type(4) img {
+  width: 100%;
 }
 
 
+
+/*section 5*/
+
+/*De h1 met mens erin*/
+.home section:nth-of-type(5) h1 {
+  font-family: sans-serif;
+  font-weight: 900;
+  color: white;
+  background-color: red;
+
+  padding: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/*Hierdoor komt de h1 in het midden*/
+.home section:nth-of-type(5) article {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*section 6*/
+
+/*Hierdoor komen de articles in een column te staan*/
+.home section:nth-of-type(6) {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+}
+
+/*Hierdoor komt de inhoud an de articles in een rij te staan*/
+.home section:nth-of-type(6) article {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); 
+
+  margin: 0.5em
+}
+
+/*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de h3*/
+.home section:nth-of-type(6) article h3 {
+  font-family: sans-serif;
+  font-size: 0.85em;
+
+  margin-left: 0.6em;
+  order: 1;
+}
+
+.home section:nth-of-type(6) img {
+  width: 100%;
+}
+
+/******************/
+/*Artikel over kat*/
+
+
+
+
+/**********************/
+/*Artikel over Ameland*/
