@@ -14,23 +14,84 @@ body {
   flex-direction: column;
 }
 
-h1 {
+h1 , h2 , h3 , p {
   font-family: sans-serif;
 }
 
-h2 {
-  font-family: sans-serif;
+
+
+/*Het menu*/
+nav {
+  background-color: #E2001A;
+
+  position:absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+  z-index: 2;
+	
+  /*Hiermee zorg je ervoor dat de width 3em kleiner wordt dan de volledige width (100% dus)*/
+	width: calc(100% - 3em);
+  /*Dit is de maximale width van de nav*/
+	max-width: 20em;
+  /*Dit zorgt ervoor dat de gehele nav buiten het scherm komt, op de x as op -100%*/
+	transform: translateX(-100%);
+
+  transition: 0.5s;
+  }
+
+/*Als er op de button wordt geclickt (in javascript staat de code), dan komt de nav op x as op 0% te staan, ofterwel volledig in beeld*/
+nav.toonNav {
+  transform: translateX(0%);
 }
 
-p {
-  font-family: sans-serif;
+nav h2 {
+  position: absolute;
+	margin: 0; 
+  padding: 0.5em;
+	
+	background-color: #E2001A;
+  color: white;
+	
+	top: 0;
+	left: 100%;
+	
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2em;
+	writing-mode: horizontal-tb;
+	
+	cursor: pointer;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
 }
 
 li {
+  display: block;
+
+  font-family: sans-serif;
+  font-size: 1.2em;
   color: white;
+
+  padding: 14px 16px;
 }
 
-footer {
+li:hover {
+  color: black;
+}
+
+
+
+/*Algemene styling voor de footer*/
+
+.footer {
   display: flex;
   flex-direction: row;
 
@@ -39,7 +100,7 @@ footer {
   margin-top: 1.6em;
 }
 
-footer li {
+.footer li {
   font-size: 0.68em;
   font-family: sans-serif;
   font-weight: bold;
@@ -47,28 +108,14 @@ footer li {
   margin-bottom: 1em;
 }
 
-footer ul {
+.footer ul {
   list-style-type: none;
   
   padding: 1em;
   width: 100%;
 }
 
-/*Met flexbox heb ik de nav in een rijtje gekregen van links naar rechts*/
-header ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 
-  background-color: red;
-  list-style-type: none;
-  font-size: 1em;
-  font-family: sans-serif;
-  font-weight: bold;
-
-  margin-top: 0.4em;
-  padding: 1em;
-}
 
 /*Door 'display: block' en de margin op auto komt het logo in het midden*/
 .logo {
@@ -81,6 +128,22 @@ header ul{
   height: 3.2em;
 }
 
+/*Dit is een animatie op het logo bovenaan. Als je er over heen hovert dan draait het logo 1x rond*/
+@keyframes logo-animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.logo:hover {
+  animation-name: logo-animation;
+  /* leker kort voor een dramatisch effect */
+  animation-duration: 1s;
+}
+
 
 
 /************/
@@ -88,19 +151,31 @@ header ul{
 
 /*section 1*/
 
+.home section:nth-of-type(1) article {
+  position: relative;
+  height: 17.5em;
+  z-index: 1;
+}
+
 .home section:nth-of-type(1) article h1 {
-  font-size: 0.9em ;
+  position: absolute;
+  bottom: 0;
+  
+  font-size: 0.9em;
   font-family: sans-serif;
   font-weight: 900;
 
   text-align: center;
   margin-top: 1.3em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.8em;
 }
 
 .home section:nth-of-type(1) article img {
+  position: absolute;
+  top: 0;
+
   width: 100%;
-  margin-bottom: 1.5em;
+  margin-top: 0.7em;
 }
 
 
@@ -132,10 +207,10 @@ header ul{
 
 
 
-/*section 3*/
+/*section 3 & 5*/
 
-/*De h1 met mens erin*/
-.home section:nth-of-type(3) h1 {
+/*De h1*/
+.home section:nth-of-type(3) h1 , .home section:nth-of-type(5) h1 {
   font-family: sans-serif;
   font-weight: 900;
   color: white;
@@ -147,23 +222,41 @@ header ul{
 }
 
 /*Hierdoor komt de h1 in het midden*/
-.home section:nth-of-type(3) article {
+.home section:nth-of-type(3) article , .home section:nth-of-type(5) article{
   display: flex;
   justify-content: center;
 }
 
+/*Hier heb ik een animatie op de article met h1 gezet. Hierdoor wordt ie een stukje groter als je er overheen hovert*/
+@keyframes h1-animation {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.2);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+.home section:nth-of-type(3) article:hover , .home section:nth-of-type(5) article:hover{
+  animation-name: h1-animation;
+  animation-duration:1s;
+}
 
 
-/*section 4*/
+
+/*section 4 & 6*/
 
 /*Hierdoor komen de articles in een column te staan*/
-.home section:nth-of-type(4) {
+.home section:nth-of-type(4) , .home section:nth-of-type(6) {
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
 }
 
 /*Hierdoor komt de inhoud an de articles in een rij te staan*/
-.home section:nth-of-type(4) article {
+.home section:nth-of-type(4) article , .home section:nth-of-type(6) article {
   display: grid;
   grid-template-columns: repeat(2, 50%); 
 
@@ -171,7 +264,7 @@ header ul{
 }
 
 /*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de h3*/
-.home section:nth-of-type(4) article h3 {
+.home section:nth-of-type(4) article h3 , .home section:nth-of-type(6) article h3{
   font-family: sans-serif;
   font-size: 0.85em;
 
@@ -179,60 +272,7 @@ header ul{
   order: 1;
 }
 
-.home section:nth-of-type(4) img {
-  width: 100%;
-}
-
-
-
-/*section 5*/
-
-/*De h1 met mens erin*/
-.home section:nth-of-type(5) h1 {
-  font-family: sans-serif;
-  font-weight: 900;
-  color: white;
-  background-color: red;
-
-  padding: 0.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-/*Hierdoor komt de h1 in het midden*/
-.home section:nth-of-type(5) article {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-/*section 6*/
-
-/*Hierdoor komen de articles in een column te staan*/
-.home section:nth-of-type(6) {
-  display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
-}
-
-/*Hierdoor komt de inhoud an de articles in een rij te staan*/
-.home section:nth-of-type(6) article {
-  display: grid;
-  grid-template-columns: repeat(2, 50%); 
-
-  margin: 0.5em
-}
-
-/*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de h3*/
-.home section:nth-of-type(6) article h3 {
-  font-family: sans-serif;
-  font-size: 0.85em;
-
-  margin-left: 0.6em;
-  order: 1;
-}
-
-.home section:nth-of-type(6) img {
+.home section:nth-of-type(4) img , .home section:nth-of-type(6) img {
   width: 100%;
 }
 
