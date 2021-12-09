@@ -123,7 +123,7 @@ In het begin ging het wat lastig en dacht ik dat mijn site totaal niet werkte, m
 
 Wat waren mogelijke oplossingen:
 Ik heb maar 2 artikelen (misschien later meer maar tijdens testen 2), dus waarschijnlijk als ik alle artikelen had gemaakt en de pagina's in het menu, dan zou hij wel gewoon goed werken en kan je overal naar toe. Dus enige oplossing zou kunnen zijn dat ik meer artikelen en pagina's maak, maar dat is niet deel van de opdracht, dus ga er een paar maken. Met een paar artikelen doet het navigeren met toetsenbord het ook. 
-In de les heb ik gevraagt aan Robert wat ik eraan kan doen en nu ga ik bij alle mogelijke linkjes <a href='#'></a> neerzetten, daardoor kom je bij de huidige pagina, maar kan je er wel doorheen tabben. 
+In de les heb ik gevraagt aan Robert wat ik eraan kan doen en nu ga ik bij alle mogelijke linkjes een a met # neerzetten, daardoor kom je bij de huidige pagina, maar kan je er wel doorheen tabben. 
 
 
 #### Ballon hooghouden 
