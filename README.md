@@ -95,7 +95,7 @@ Ik moest vooral nog even kijken naar de stuctuur van mijn html. Ik moet alle sec
 Het gaat wel goed. Vind het leuk, dus zit graag te werken aan mijn website. De standaard dingen, zoals de content er goed in zetten en styling, gaat allemaal goed. Ga aankomende week aan de surface plane beginnen, dus dan gaat het wat ingewikkelder worden denk ik. Maar meeste dingen zijn op internet te vinden gelukkig. 
 
 ### Verslag van meeting
-Ik ben opzich goed bezig, maar moet me nu gaan focussen op de balangrijke delen. Dus goed kijken of ik surface of responsive wil doen 
+Ik ben opzich goed bezig, maar moet me nu gaan focussen op de balangrijke delen. Dus goed kijken of ik surface of responsive wil doen. Ik was bezig met extra pagina's maar moet me dus eerst focussen op de belangrijke zaken en later dan nog kijken wat ik extra wil toevoegen (waarschijnlijk ga ik dat wel doen, want artikelen toevoegen is niet moeilijk).
 
 </details>
 
@@ -111,28 +111,32 @@ Ik ben opzich goed bezig, maar moet me nu gaan focussen op de balangrijke delen.
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Screenreader (visuele beperking)
+Het ging opzich wel goed. Was even moeilijk om goede screenreader te vinden voor windows, maar had uiteindelijk de standaard screenreader van windows gebruikt en die deed het goed. Hij las duidelijk de kopjes voor en de volgorde was in orde.
+ 
+Wat waren mogelijke oplossingen:
+Alles ging wel goed, dus er was niet echt iets wat ik kon aanpassen. 
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Toetsenbord bediening (motorieke of visuele beperking)
+In het begin ging het wat lastig en dacht ik dat mijn site totaal niet werkte, maar opeens bedacht ik me dat ik haast geenlinkjes en buttons heb, dus je kan moeilijk tabben door mijn website. Heb uiteindelijk de 2 gemaakte artikelen gelinkt en toen deed hij het wel goed, maar het zijn er maar 2 (en het logo).
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Wat waren mogelijke oplossingen:
+Ik heb maar 2 artikelen (misschien later meer maar tijdens testen 2), dus waarschijnlijk als ik alle artikelen had gemaakt en de pagina's in het menu, dan zou hij wel gewoon goed werken en kan je overal naar toe. Dus enige oplossing zou kunnen zijn dat ik meer artikelen en pagina's maak, maar dat is niet deel van de opdracht, dus ga er een paar maken. Met een paar artikelen doet het navigeren met toetsenbord het ook. 
+In de les heb ik gevraagt aan Robert wat ik eraan kan doen en nu ga ik bij alle mogelijke linkjes <a href='#'> neerzetten, daardoor kom je bij de huidige pagina, maar kan je er wel doorheen tabben. 
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Ballon hooghouden 
+We moesten de website gebruiken en dan een ballon hooghouden. Daardoor ben je met 2 dingen te gelijk bezig en is het moeilijk om een website te bedienen. Het ging wel goed opzich, al is het ballon hooghouden wel moeilijker dan bijvoorbeeld praten, kind op je schoot houden, eten etc. Ik heb geen hele moeilijke dingen op mijn pagina staan, dus met scroll en klik of tab en enter kan je het redelijk goed bedienene.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Wat waren mogelijke oplossingen:
+Er waren geen dingen die een oplossing nodig hadden.
+
+#### Elektronische schokken (motorieke beperking)
+We kregen een schokband op onze arm en daardoor kan je je arm haast niet meer gebruiken. Het was echt een naar gevoel, dus kon inderdaad geen muis meer gebruiken of typen. 
+
+Wat waren mogelijke oplossingen:
+Wat een mogelijke oplossing kan zijn is met voice bedienen of alleen tab gebruiken. Voice gebruiken gaat wel heel ver voor deze opdracht, maar de website zo maken dat je overal kan komen door tab, ga ik zeker wel doen. 
 
 </details>
 
