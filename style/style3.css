@@ -200,7 +200,7 @@ footer ul {
   margin-bottom: 0.8em;
 }
 
-.home section:nth-of-type(1) article img {
+.home section:nth-of-type(1) article a img {
   position: absolute;
   top: 0;
 
@@ -314,6 +314,12 @@ iframe {
   margin: 0.5em
 }
 
+.home section:nth-of-type(4) img, 
+.home section:nth-of-type(7) img {
+  width: 100%;
+  order: 0;
+}
+
 /*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de a*/
 .home section:nth-of-type(4) article a, 
 .home section:nth-of-type(7) article a{
@@ -325,12 +331,6 @@ iframe {
 
   margin-left: 0.6em;
   order: 1;
-}
-
-.home section:nth-of-type(4) img, 
-.home section:nth-of-type(7) img {
-  width: 100%;
-  order: 0;
 }
 
 
