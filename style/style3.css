@@ -186,8 +186,7 @@ footer ul {
 }
 
 .home section:nth-of-type(1) article a {
-  position: absolute;
-  bottom: 0;
+  position: relative;
 
   font-family: sans-serif;
   font-size: 0.9em;
@@ -201,8 +200,7 @@ footer ul {
 }
 
 .home section:nth-of-type(1) article a img {
-  position: absolute;
-  top: 0;
+  position: relative;
 
   width: 100%;
   margin-top: 0.7em;
