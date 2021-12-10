@@ -7,3 +7,14 @@ function komTevoorschijn(){
 }
 
 button.addEventListener("click", komTevoorschijn);
+
+
+
+var button = document.querySelector(".darkmodebody")
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+button.addEventListener("click", myFunction)

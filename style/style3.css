@@ -12,6 +12,17 @@
 body {
   display: flex;
   flex-direction: column;
+  color: black;
+  background-color: white;
+}
+
+.dark-modebody {
+  color: white;
+  background-color: black;
+}
+
+.dark-modelink a{
+  color: white;
 }
 
 h1 , h2 , h3 , p {
@@ -20,7 +31,7 @@ h1 , h2 , h3 , p {
 
 
 
-/*Het menu*/
+/*Het menu. Dit stuk code over een menu heb ik door de opdracht over een inklapbaar menu te maken*/
 nav {
   background-color: #E2001A;
 
@@ -45,18 +56,21 @@ nav.toonNav {
   transform: translateX(0%);
 }
 
-nav h2 {
+nav h2 button:nth-of-type(1) {
   position: absolute;
 	margin: 0; 
-  padding: 0.5em;
+  padding: 0.3em;
+  
 	
 	background-color: #E2001A;
   color: white;
 	
 	top: 0;
 	left: 100%;
-	
-	font-size: 1em;
+
+	text-decoration: none;
+  border: none;
+	font-size: 0.8em;
 	font-weight: bold;
 	text-align: center;
 	line-height: 2em;
@@ -65,7 +79,7 @@ nav h2 {
 	cursor: pointer;
 }
 
-ul {
+nav ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -73,12 +87,13 @@ ul {
   list-style-type: none;
 }
 
-li {
+nav li a{
   display: block;
 
   font-family: sans-serif;
   font-size: 1.2em;
   color: white;
+  text-decoration: none;
 
   padding: 14px 16px;
 }
@@ -87,11 +102,15 @@ li:hover {
   color: black;
 }
 
+nav button:nth-of-type(2) {
+  color: blue;
+}
+
 
 
 /*Algemene styling voor de footer*/
 
-.footer {
+footer {
   display: flex;
   flex-direction: row;
 
@@ -100,19 +119,27 @@ li:hover {
   margin-top: 1.6em;
 }
 
-.footer li {
-  font-size: 0.68em;
-  font-family: sans-serif;
-  font-weight: bold;
-
-  margin-bottom: 1em;
+footer li {
+  margin-top: 1em;
 }
 
-.footer ul {
+footer li a {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+  margin-left: 1em;
+}
+
+footer ul {
   list-style-type: none;
-  
-  padding: 1em;
+  justify-content: top;
+  align-items: left;
+
   width: 100%;
+  height: 12.5em;
 }
 
 
@@ -129,6 +156,7 @@ li:hover {
 }
 
 /*Dit is een animatie op het logo bovenaan. Als je er over heen hovert dan draait het logo 1x rond*/
+/*Dit stukje code over animaties heb ik door de opdracht over een animatie te maken*/
 @keyframes logo-animation {
   0% {
     transform: rotate(0);
@@ -157,13 +185,15 @@ li:hover {
   z-index: 1;
 }
 
-.home section:nth-of-type(1) article h1 {
+.home section:nth-of-type(1) article a {
   position: absolute;
   bottom: 0;
-  
-  font-size: 0.9em;
+
   font-family: sans-serif;
+  font-size: 0.9em;
   font-weight: 900;
+  color: black;
+  text-decoration: none;
 
   text-align: center;
   margin-top: 1.3em;
@@ -196,25 +226,31 @@ li:hover {
 
 .home section:nth-of-type(2) article img{
   width: 100%; 
-  margin-top: 0.5em;
+  margin-top: 1.3em;
 }
 
 /*Styling van de h2*/
-.home section:nth-of-type(2) article h2{
+.home section:nth-of-type(2) article a{
   font-size: 0.8em;
   font-family: sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 
 
-/*section 3 & 5*/
+/*section 3 & 6*/
 
 /*De h1*/
-.home section:nth-of-type(3) h1 , .home section:nth-of-type(5) h1 {
+.home section:nth-of-type(3) a, 
+.home section:nth-of-type(6) a {
+  font-size: 1.2em;
   font-family: sans-serif;
   font-weight: 900;
   color: white;
   background-color: red;
+  text-decoration: none;
 
   padding: 0.5em;
   margin-top: 1.5em;
@@ -222,13 +258,15 @@ li:hover {
 }
 
 /*Hierdoor komt de h1 in het midden*/
-.home section:nth-of-type(3) article , .home section:nth-of-type(5) article{
+.home section:nth-of-type(3) article, 
+.home section:nth-of-type(6) article{
   display: flex;
   justify-content: center;
 }
 
 /*Hier heb ik een animatie op de article met h1 gezet. Hierdoor wordt ie een stukje groter als je er overheen hovert*/
-@keyframes h1-animation {
+/*Dit stukje code over animaties heb ik door de opdracht over een animatie te maken*/
+@keyframes a-animation {
   0% {
     transform:scale(1);
   }
@@ -240,78 +278,74 @@ li:hover {
   }
 }
 
-.home section:nth-of-type(3) article:hover , .home section:nth-of-type(5) article:hover{
-  animation-name: h1-animation;
+.home section:nth-of-type(3) article:hover, 
+.home section:nth-of-type(6) article:hover{
+  animation-name: a-animation;
   animation-duration:1s;
 }
 
 
 
-/*section 4 & 6*/
+/*Section 5*/
+iframe {
+  width: 100%;
+  height: 19.7em;
+  margin-top: 1.5em;
+}
+
+
+
+
+/*section 4 & 7*/
 
 /*Hierdoor komen de articles in een column te staan*/
-.home section:nth-of-type(4) , .home section:nth-of-type(6) {
+.home section:nth-of-type(4), 
+.home section:nth-of-type(7) {
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
 }
 
 /*Hierdoor komt de inhoud an de articles in een rij te staan*/
-.home section:nth-of-type(4) article , .home section:nth-of-type(6) article {
+.home section:nth-of-type(4) article, 
+.home section:nth-of-type(7) article {
   display: grid;
   grid-template-columns: repeat(2, 50%); 
 
   margin: 0.5em
 }
 
-/*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de h3*/
-.home section:nth-of-type(4) article h3 , .home section:nth-of-type(6) article h3{
+/*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de a*/
+.home section:nth-of-type(4) article a, 
+.home section:nth-of-type(7) article a{
   font-family: sans-serif;
   font-size: 0.85em;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
 
   margin-left: 0.6em;
   order: 1;
 }
 
-.home section:nth-of-type(4) img , .home section:nth-of-type(6) img {
+.home section:nth-of-type(4) img, 
+.home section:nth-of-type(7) img {
   width: 100%;
+  order: 0;
 }
 
 
 
-/******************/
-/*Artikel over kat*/
+/**************/
+/*De artikelen*/
 
-.kat p {
-  font-family: sans-serif;
-}
-
-.kat article {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-
-.kat article:nth-of-type(1) h1 {
-  font-size: 1.5em;
-}
-
-.kat article:nth-of-type(1) img {
-  width: 100%;
-  margin-top: 1em;
-}
-
-
-
-/**********************/
-/*Artikel over Ameland*/
-
+.kat p, 
 .ameland p {
   font-family: sans-serif;
+  font-size: 1em;
 }
 
-.ameland article {
+.kat section, 
+.ameland section {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -319,11 +353,21 @@ li:hover {
   margin-right: 0.5em;
 }
 
-.ameland article:nth-of-type(1) h1 {
-  font-size: 1.5em;
+.kat section:nth-of-type(1) h1, 
+.ameland section:nth-of-type(1) h1{
+  font-size: 1.2em;
 }
 
-.ameland article:nth-of-type(1) img {
+.kat section h2 , .ameland section h2{
+  font-size: 1.1em;
+}
+
+.kat section:nth-of-type(1) img, 
+.ameland section:nth-of-type(1) img{
   width: 100%;
+  height: 10em;
   margin-top: 1em;
 }
+
+
+
