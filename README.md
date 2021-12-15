@@ -166,9 +166,8 @@ Ik ben goed op weg zei de studenten assistente. De website en code zien er prima
 ### Stand van zaken
 De opdracht ging echt wel goed, vond het ook erg leuk. Ik heb eigenlijk helemaal geen grote tegenslagen gehad tijdens de opdracht, soms wel dingen die ik niet snapte, maar eigenlijk ging alles heel soepel. Ik was lekker bezig met dingen ontdekken en echt aan het kijken wat ik allemaal kan maken op de website, want ben nog geen enorme nerd die alles snapt, maar dat ging allemaal goed en heb heel Google afgezocht naar dingen die ik in mijn website kan zetten.
 
-### Screenshot(s)
+### Link naar de eind website
 
-hier screenshot(s) van je eindresultaat
 
 </details>
 
