@@ -39,12 +39,11 @@ Surface plane
 Quest website https://www.quest.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+De eerste pagina is de home pagina https://www.quest.nl/
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+De tweede pagina is een artikel https://www.quest.nl/natuur/milieu/a37769586/laatste-witte-kerst-nederland-wanneer/
+Zijn er uiteindelijk meer geworden dan 1, maar wel allemaal artikelen
  
 </details>
 
