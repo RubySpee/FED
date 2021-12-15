@@ -146,26 +146,11 @@ Wat een mogelijke oplossing kan zijn is met voice bedienen of alleen tab gebruik
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Het gaat heel goed. Ben lekker bezig en met de website gaat alles goed. Ga nu de laatste dingen nog aan mijn website toevoegen en dan vooral de delen voor de surface plane. Ik ga nog even goed kijken wat ik allemaal kan toevoegen van de surface plane, want moet de code wel snappen natuurlijk. Verder gaat alles gewoon z'n gangentje. 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Ik ben goed op weg zei de studenten assistente. De website en code zien er prima uit en moet me nu gaan richten op de surface plane en de laatste puntjes op de i zetten. 
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -179,7 +164,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De opdracht ging echt wel goed, vond het ook erg leuk. Ik heb eigenlijk helemaal geen grote tegenslagen gehad tijdens de opdracht, soms wel dingen die ik niet snapte, maar eigenlijk ging alles heel soepel. Ik was lekker bezig met dingen ontdekken en echt aan het kijken wat ik allemaal kan maken op de website, want ben nog geen enorme nerd die alles snapt, maar dat ging allemaal goed en heb heel Google afgezocht naar dingen die ik in mijn website kan zetten.
 
 ### Screenshot(s)
 
