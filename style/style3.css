@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+/*Bron: https://www.youtube.com/watch?v=9LZGB3OLXNQ*/
+/*Met behulp van het filmpje hierboven heb ik een darkmode toegevoegd aan mijn site*/
+:root {
+  --primary-color: white;
+  --secondary-color: #333;
+}
+
+.dark-mode {
+  --primary-color: black;
+  --secondary-color: white;
+}
 
 
 /******************/
@@ -13,21 +24,12 @@ body {
   display: flex;
   flex-direction: column;
   color: #333;
-  background-color: white;
-}
-
-.dark-modebody {
-  color: white;
-  background-color: black;
-}
-
-.dark-modelink a{
-  color: white;
+  background-color: var(--primary-color);
 }
 
 h1 , h2 , h3 , p {
   font-family: sans-serif;
-  color: #333
+  color: var(--secondary-color);
 }
 
 
@@ -103,8 +105,55 @@ li:hover {
   color: #333;
 }
 
-nav button:nth-of-type(2) {
-  color: blue;
+
+
+/*De styling voor de darkmode button*/
+.darkmode {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: white;
+  background-color: #E2001A;
+  border: black solid;
+
+  padding: 0.4em;
+  margin-top: 1em;
+  margin-left: 5.9em;
+}
+
+
+
+/*Dit gedeelte komt uit de opdracht over states. https://codepen.io/shooft/pen/gOrJdGG?editors=1100*/
+/*De styling voor de zoekbalk*/
+input {
+  font-size: 2em;
+  color: #333;
+  background-color: white;
+  border: none;
+  outline: none;
+
+  line-height: 3em;
+
+  margin-top: 0.8em;
+  margin-left: 2.9em;
+}
+
+input::placeholder {
+  color: #333;
+}
+
+/*De styling voor de search gedeelte en voor het vergrootglas bij de zoekbalk*/
+input[type="search"] {
+  position: relative;
+  padding-left: 2em;
+  font-size: 1em;
+  
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg);
+  /*Dit zorgt ervoor dat je de img maar 1 keer ziet*/
+  background-repeat: no-repeat;
+  /*Dit zorgt voor de juiste grote. Anders is de img heel groot*/
+  background-size: 1.25em;
+  /*Dit zorgt voor dat de img in het midden komt van de zoekbalk en dan aan de zijkant van de balk*/
+  background-position: .75em center;
 }
 
 
@@ -136,8 +185,6 @@ footer li a {
 
 footer ul {
   list-style-type: none;
-  justify-content: top;
-  align-items: left;
 
   width: 100%;
   height: 12.5em;
@@ -169,7 +216,6 @@ footer ul {
 
 .logo:hover {
   animation-name: logo-animation;
-  /* leker kort voor een dramatisch effect */
   animation-duration: 1s;
 }
 
@@ -192,7 +238,7 @@ footer ul {
   font-family: sans-serif;
   font-size: 0.9em;
   font-weight: 900;
-  color: #333;
+  color: var(--secondary-color);
   text-decoration: none;
 
   margin-bottom: 0.8em;
@@ -230,7 +276,7 @@ footer ul {
   font-family: sans-serif;
   font-weight: 600;
   text-decoration: none;
-  color: #333;
+  color: var(--secondary-color);
 }
 
 
@@ -244,7 +290,7 @@ footer ul {
   font-family: sans-serif;
   font-weight: 900;
   color: white;
-  background-color: red;
+  background-color: #E2001A;
   text-decoration: none;
 
   padding: 0.5em;
@@ -323,7 +369,7 @@ iframe {
   font-family: sans-serif;
   font-size: 0.85em;
   font-weight: 600;
-  color: #333;
+  color: var(--secondary-color);
   text-decoration: none;
 
   margin-left: 0.6em;
@@ -339,7 +385,7 @@ iframe {
 .ameland p {
   font-family: sans-serif;
   font-size: 1em;
-  color: #333;
+  color: var(--secondary-color);
   line-height: 1.4em;
   word-spacing: 0.3em;
 }
@@ -349,14 +395,16 @@ iframe {
   display: block;
   margin-block-start: 1.4em;
   margin-block-end: 1em;
-  margin-left: 0.7em;
-  margin-right: 0.7em;
+  margin-left: 0.9em;
+  margin-right: 0.9em;
 }
 
 .kat section:nth-of-type(1) h1, 
 .ameland section:nth-of-type(1) h1{
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 800;
+  word-spacing: -0.1em;
+  letter-spacing: -0.04em;
 }
 
 .kat section h2, 
@@ -371,5 +419,47 @@ iframe {
   margin-top: 1em;
 }
 
+
+/*Het stukje van 'lees ook'*/
+.kat section:nth-of-type(6),
+.ameland section:nth-of-type(7) {
+  margin-top: 3em;
+}
+
+.kat section:nth-of-type(6) h3,
+.ameland section:nth-of-type(7) h3 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 0.8em;
+  color: #E2001A;
+  text-transform: uppercase;
+  border-bottom: 0.0625rem solid var(--secondary-color);
+  letter-spacing: 0.1em;
+}
+
+.kat section:nth-of-type(6) li,
+.ameland section:nth-of-type(7) li {
+  display: grid;
+  grid-template-columns: repeat(2, 40% 60%); 
+
+  margin-top: 0.6em;
+
+  list-style-type: none;
+}
+
+.kat section:nth-of-type(6) img,
+.ameland section:nth-of-type(7) img {
+  width: 100%;
+}
+
+.kat section:nth-of-type(6) li a,
+.ameland section:nth-of-type(7) li a {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  
+  margin-left: 0.6em;
+}
 
 
