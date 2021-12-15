@@ -1,0 +1,536 @@
+/*Om de styling te reseten. Hierdoor geen standaard margins en paddings*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Bron: https://www.youtube.com/watch?v=9LZGB3OLXNQ*/
+/*Met behulp van het filmpje hierboven heb ik een darkmode toegevoegd aan mijn site*/
+:root {
+  --primary-color: white;
+  --secondary-color: #333;
+}
+
+.dark-mode {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+
+/******************/
+/*Algemene styling*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  background-color: var(--primary-color);
+}
+
+h1 , h2 , h3 , p {
+  font-family: sans-serif;
+  color: var(--secondary-color);
+}
+
+
+
+/*Het menu. Dit stuk code over een menu heb ik door de opdracht over een inklapbaar menu te maken*/
+nav {
+  background-color: #E2001A;
+
+  position:absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+  z-index: 2;
+	
+  /*Hiermee zorg je ervoor dat de width 3em kleiner wordt dan de volledige width (100% dus)*/
+	width: calc(100% - 3em);
+  /*Dit is de maximale width van de nav*/
+	max-width: 20em;
+  /*Dit zorgt ervoor dat de gehele nav buiten het scherm komt, op de x as op -100%*/
+	transform: translateX(-100%);
+
+  transition: 0.5s;
+  }
+
+/*Als er op de button wordt geclickt (in javascript staat de code), dan komt de nav op x as op 0% te staan, ofterwel volledig in beeld*/
+nav.toonNav {
+  transform: translateX(0%);
+}
+
+nav h2 button:nth-of-type(1) {
+  position: absolute;
+	margin: 0; 
+  padding: 0.3em;
+  
+	
+	background-color: #E2001A;
+  color: white;
+	
+	top: 0;
+	left: 100%;
+
+	text-decoration: none;
+  border: none;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2em;
+	writing-mode: horizontal-tb;
+	
+	cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav li a{
+  display: block;
+
+  font-family: sans-serif;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+
+  padding: 14px 16px;
+}
+
+li:hover {
+  color: #333;
+}
+
+
+
+/*De styling voor de darkmode button*/
+.darkmode {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: white;
+  background-color: #E2001A;
+  border: black solid;
+  border-radius: 15px;
+  box-shadow: 0 3px rgb(82, 82, 82);
+
+  padding: 0.4em;
+  margin-top: 1em;
+  margin-left: 5.9em;
+}
+
+.darkmode:active {
+  background-color: #a80014;
+  box-shadow: 0 2px rgb(61, 61, 61);
+  transform: translateY(4px);
+}
+
+
+/*Dit gedeelte komt uit de opdracht over states. https://codepen.io/shooft/pen/gOrJdGG?editors=1100*/
+/*De styling voor de zoekbalk*/
+nav section input {
+  font-size: 2em;
+  color: #333;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+
+  line-height: 3em;
+
+  margin-top: 0.8em;
+  margin-left: 2.9em;
+}
+
+nav section input::placeholder {
+  color: #333;
+}
+
+/*De styling voor de search gedeelte en voor het vergrootglas bij de zoekbalk*/
+nav section input[type="search"] {
+  position: relative;
+  padding-left: 2em;
+  font-size: 1em;
+  
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg);
+  /*Dit zorgt ervoor dat je de img maar 1 keer ziet*/
+  background-repeat: no-repeat;
+  /*Dit zorgt voor de juiste grote. Anders is de img heel groot*/
+  background-size: 1.25em;
+  /*Dit zorgt voor dat de img in het midden komt van de zoekbalk en dan aan de zijkant van de balk*/
+  background-position: .75em center;
+}
+
+
+
+/*Algemene styling voor de footer*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #333333;
+
+  margin-top: 1.6em;
+}
+
+footer li {
+  margin-top: 1em;
+}
+
+footer li a {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+  margin-left: 1em;
+}
+
+footer ul {
+  list-style-type: none;
+
+  width: 100%;
+  height: 12.5em;
+}
+
+
+
+/*Door 'display: block' en de margin op auto komt het logo in het midden*/
+.logo {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  width: 8.38em;
+  height: 3.2em;
+}
+
+/*Dit is een animatie op het logo bovenaan. Als je er over heen hovert dan draait het logo 1x rond*/
+/*Dit stukje code over animaties heb ik door de opdracht over een animatie te maken*/
+@keyframes logo-animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.logo:hover {
+  animation-name: logo-animation;
+  animation-duration: 1s;
+}
+
+
+
+/************/
+/*Homepagina*/
+
+/*section 1*/
+
+.home section:nth-of-type(1) article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home section:nth-of-type(1) article a {
+  text-align: center;
+
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: 900;
+  color: var(--secondary-color);
+  text-decoration: none;
+
+  margin-bottom: 0.8em;
+}
+
+.home section:nth-of-type(1) article a img {
+  width: 100%;
+  margin-top: 0.7em;
+}
+
+
+
+/*section 2*/
+
+.home section:nth-of-type(2) {
+  display: grid; 
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.25em;
+
+  margin: 0.5em;
+}
+
+.home section:nth-of-type(2) article{
+  grid-column:span 2;
+}
+
+.home section:nth-of-type(2) article img{
+  width: 100%; 
+  margin-top: 1.3em;
+}
+
+/*Styling van de h2*/
+.home section:nth-of-type(2) article a{
+  font-size: 0.8em;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+
+
+/*section 3 & 6*/
+
+/*De h1*/
+.home section:nth-of-type(3) a, 
+.home section:nth-of-type(6) a {
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: white;
+  background-color: #E2001A;
+  text-decoration: none;
+
+  padding: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.home section:nth-of-type(3) a:focus,
+.home section:nth-of-type(6) a:focus {
+  background-color: #a80014;
+}
+
+/*Hierdoor komt de h1 in het midden*/
+.home section:nth-of-type(3) article, 
+.home section:nth-of-type(6) article{
+  display: flex;
+  justify-content: center;
+}
+
+/*Hier heb ik een animatie op de article met h1 gezet. Hierdoor wordt ie een stukje groter als je er overheen hovert*/
+/*Dit stukje code over animaties heb ik door de opdracht over een animatie te maken*/
+@keyframes a-animation {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.2);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+.home section:nth-of-type(3) article:hover, 
+.home section:nth-of-type(6) article:hover{
+  animation-name: a-animation;
+  animation-duration:1s;
+}
+
+
+
+/*Section 5*/
+iframe {
+  width: 100%;
+  height: 19.7em;
+  margin-top: 1.5em;
+}
+
+
+
+
+/*section 4 & 7*/
+
+/*Hierdoor komen de articles in een column te staan*/
+.home section:nth-of-type(4), 
+.home section:nth-of-type(7) {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+}
+
+/*Hierdoor komt de inhoud an de articles in een rij te staan*/
+.home section:nth-of-type(4) article, 
+.home section:nth-of-type(7) article {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); 
+
+  margin-top: 0.6em;
+  margin-right: 0.8em;
+  margin-left: 0.8em;
+}
+
+.home section:nth-of-type(4) img, 
+.home section:nth-of-type(7) img {
+  width: 100%;
+  order: 0;
+}
+
+/*Door order 1 te doen, komt als eerst de img (want die is 0) en daarna de a*/
+.home section:nth-of-type(4) article a, 
+.home section:nth-of-type(7) article a{
+  font-family: sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--secondary-color);
+  text-decoration: none;
+
+  margin-left: 0.6em;
+  order: 1;
+}
+
+
+
+/**************/
+/*De artikelen*/
+
+.kat p, 
+.ameland p,
+.contact p {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: var(--secondary-color);
+  line-height: 1.4em;
+  word-spacing: 0.3em;
+}
+
+.kat section, 
+.ameland section,
+.contact section {
+  display: block;
+  margin-block-start: 1.4em;
+  margin-left: 0.9em;
+  margin-right: 0.9em;
+}
+
+.kat section:nth-of-type(1) h1, 
+.ameland section:nth-of-type(1) h1,
+.contact section:nth-of-type(1) h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  word-spacing: -0.1em;
+  letter-spacing: -0.04em;
+}
+
+.kat section h2, 
+.ameland section h2,
+.contact section h2 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.kat section:nth-of-type(1) img, 
+.ameland section:nth-of-type(1) img,
+.contact section:nth-of-type(1) img {
+  width: 100%;
+  margin-top: 1em;
+}
+
+
+
+/*Het stukje van 'lees ook'*/
+.kat section:nth-of-type(7),
+.ameland section:nth-of-type(8) {
+  margin-top: 3em;
+}
+
+.kat section:nth-of-type(7) h3,
+.ameland section:nth-of-type(8) h3 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 0.8em;
+  color: #E2001A;
+  text-transform: uppercase;
+  border-bottom: 0.0625rem solid var(--secondary-color);
+  letter-spacing: 0.1em;
+}
+
+.kat section:nth-of-type(7) li,
+.ameland section:nth-of-type(8) li {
+  display: grid;
+  grid-template-columns: repeat(2, 40% 60%); 
+
+  margin-top: 0.6em;
+
+  list-style-type: none;
+}
+
+.kat section:nth-of-type(7) img,
+.ameland section:nth-of-type(8) img {
+  width: 100%;
+}
+
+.kat section:nth-of-type(7) li a,
+.ameland section:nth-of-type(8) li a {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  
+  margin-left: 0.6em;
+}
+
+
+
+/*Dit zorgt ervoor dat de zoekbalk de styling mee krijgt van regel 394-400*/
+.kat nav section,
+.ameland nav section,
+.contact nav section {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+
+
+/*Het formulier op de contact pagina*/
+.contact section:nth-of-type(7) form p {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: var(--secondary-color);
+  line-height: 1.4em;
+  word-spacing: 0.3em;
+  margin-top: 4em;
+}
+
+.contact section:nth-of-type(7) input[type="text"] {
+  font-size: 1em;
+  color: #333;
+  background-color: white;
+  border: #E2001A solid;
+
+  width: 70%;
+  margin-top: 0.55em;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: rgb(114, 114, 114);
+}
+
+.contact textarea {
+  font-family: sans-serif;
+  border: #E2001A solid;
+
+  width: 90%;
+  margin-top: 0.55em;
+}
+
+.contact input[type="submit"] {
+  font-size: 1em;
+  color: white;
+  background-color: #E2001A;
+  border: none;
+
+  padding: 0.3em;
+  margin-top: 0.55em;
+}
