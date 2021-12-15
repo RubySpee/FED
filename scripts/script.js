@@ -22,3 +22,11 @@ function myFunction() {
 }
 
 button.addEventListener("click", myFunction)
+
+
+
+//Bron: https://www.w3schools.com/jsref/event_onsubmit.asp
+//Hierdoor wordt er een melding verzonden als je op de submit knop drukt
+function Verzend() {
+    alert("Je vraag is bij ons ontvangen. Wij reageren zo snel mogelijk.");
+}

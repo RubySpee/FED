@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="jouw naam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Quest</title>
+
+    <link href="./style/style3.css" rel="stylesheet">
+</head>
+
+
+<!--Alle gebruikte images en tekst komen van https://www.quest.nl/-->
+
+
+<body class="contact">
+
+    <!--Het logo boven aan de pagina en die heb ik in een figure gezet-->
+    <figure>
+        <a href="./index.html"> <img class="logo" src="./img/quest.png" alt="Quest logo"></a>
+    </figure>
+
+    <!--Het hamburger menu links boven op de pagina-->
+    <header>
+
+        <nav>
+            <h2><button>Menu</button></h2>
+
+            <button class="darkmode">Dark/light mode</button>
+
+            <section>
+				<input type="search" placeholder="Zoeken">
+			</section>
+
+            <ul>
+                <li><a href='#'>Klantenservice</a></li>
+                <li><a href='#'>Over Quest</a></li>
+                <li><a href='#'>Nieuwsbrief</a></li>
+                <li><a href='#'>Abonneren</a></li>
+                <li><a href='#'>Shop</a></li>
+                <li><a href='#'>Test jezelf</a></li>
+                <li><a href='#'>Mens</a></li>
+                <li><a href='#'>Tech</a></li>
+                <li><a href='#'>Natuur</a></li>
+                <li><a href='#'>Maatschappij</a></li>
+                <li><a href='./contact.html'>Contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <section>
+                <h1>Zo neem je contact op met Quest</h1>
+
+                <p>Dagelijks nieuwe interessante en leuke feitjes uit de wetenschap</p>
+
+                <img src="./img/touw.jpg" alt="2 touwen in elkaar geknopt">
+            </section>
+
+            <section>
+                <h2>Klantenservice Quest</h2>
+
+                <p>Beëindigen van je abonnement? Hulp nodig bij het plaatsten van een bestelling in onze webshop? 
+                    Eén telefoontje met onze klantenservice is voldoende. Je kunt de klantenservice elke werkdag 
+                    (ma-vr) bellen van 09.00 tot 17.00 uur.</p>
+
+                <p>Klantenservice Nederland: 088 - 024 54 44
+                    Klantenservice België: 078 - 48 01 83</p>
+
+                <p>Heb je een vraag over je abonnement of wil je iets wijzigen? Dan kun je de klantenservice ook schrijven en mailen.</p>
+            </section>
+
+            <section>
+                <h2>Klantenservice Nederland</h2>
+
+                <p>Klantenservice Quest, Postbus 10985, 1001 EZ Amsterdam
+                    klantenservice@quest.nl</p>
+            </section>
+
+            <section>
+                <h2>Klantenservice België</h2>
+
+                <p>Klantenservice Quest, Postbus 63, 2650 Edegem
+                    klantenservice@quest-magazine.be</p>
+            </section>
+
+            <section>
+                <h2>Redactie</h2>
+
+                <p>Heb je een vraag over de inhoud van Quest? Bijvoorbeeld voor onze rubriek vraag & antwoord? 
+                    Wil je iets aan de redactie kwijt? Neem contact met ons op via redactie@quest.nl. Het colofon 
+                    van Quest vind je hier.</p>
+            </section>
+
+            <section>
+                <h2>Website</h2>
+
+                <p>Heb je technische vragen, opmerkingen of suggesties voor onze website? Ben je iets tegengekomen 
+                    dat niet werkt? Laat het ons weten via online@quest.nl.</p>
+            </section>
+
+            <section>
+                <!--Door onsubmit=verzend en stukje code in javascript krijg je een melding als je je vraag verzend-->
+                <form onsubmit="Verzend()"> <!--Ik heb een formulier gemaakt zodat je een verhaaltje/berichtje kan schrijven en dan komt ie op de site-->
+                    <p>
+                        Wil je een vraag stellen aan ons team. Stel hem hieronder en wij geven zo snel mogelijk antwoord!!
+                    </p>
+                    <input type="text" name="Name" placeholder="Name">
+                    <input type="text" name="Email" placeholder="Email">
+                    <textarea name="Answer" cols="30" rows="10" placeholder="Wat is jou vraag??"></textarea>
+                    <input type="submit" value="Verzenden">
+                </form>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+		<ul>
+			<li><a href='#'>OVER QUEST</a></li>
+			<li><a href='#'>TEST</a></li>
+			<li><a href='#'>VEELGESTELDE VRAGEN</a></li>
+			<li><a href='#'>KLANTENSERVICE</a></li>
+			<li><a href='#'>FAQ</a></li>
+		</ul>
+
+		<ul>
+			<li><a href='#'>ABONNEREN</a></li>
+			<li><a href='#'>SERVICE & CONTACT</a></li>
+			<li><a href='#'>NIEUWSBRIEF</a></li>
+			<li><a href='#'>COLOFON</a></li>
+		</ul>
+
+	</footer>
+
+
+	<script src="./scripts/script.js"></script>
+</body>
+
+</html>
